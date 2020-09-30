@@ -1,29 +1,16 @@
-* {
-    margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; 
-}
- .recipe-image {
-     width: 400px;
-     height: 300px;
- }
 
-.recipe-flip-card {
+.flip-card {
     /* background-color: transparent; */
     width: 400px;
     height: 400px;
     perspective: 1000px;
     -webkit-perspective: 1000px;
     display: inline-flex;
-    margin-right: 200px;
-    margin-left: 500px;
-    padding-bottom: 100px;
 
 
 }
 
-.recipe-flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -33,11 +20,11 @@
 
 }
 
-.recipe-flip-card:hover .recipe-flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-.recipe-flip-card-front, .recipe-flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -45,13 +32,13 @@
     backface-visibility: hidden;
 }
 
-.recipe-flip-card-front {
-    background-color: chocolate;
-    color: darkolivegreen;
+.flip-card-front {
+    background-color: black;
+    color: Red;
 }
 
-.recipe-flip-card-back {
-    background-color: chocolate;
-    color: darkolivegreen;
+.flip-card-back {
+    background-color: red;
+    color: black;
     transform: rotateY(180deg);
 }
