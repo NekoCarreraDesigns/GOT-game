@@ -1,28 +1,28 @@
-import React, { Component } from "react";
-import API from "../../utils/API";
-import Card from "../../components/Card/index";
+// import React, { Component } from "react";
+// import API from "../../utils/API";
+// import Card from "../../components/Card/index";
 
-class Main extends Component {
-    state = {
-        characters: [{}],
-        image: "",
-        name: "",
-    }
-    componentDidMount() {
-        API.getCharacters().then((res) => {
-            this.setState({
-                characters: res.data.results
-            });
-        });
-    }
+// class Main extends Component {
+//     state = {
+//         characters: [{}],
+//         image: "",
+//         name: "",
+//     }
+//     componentDidMount() {
+//         API.getCharacters().then((res) => {
+//             this.setState({
+//                 characters: res.data
+//             });
+//         }).catch((err) => console.log(404))
+//     }
 
-    render() {
-        return (
-            <>
-                <Card characters={this.state.characters} image={this.state.image} name={this.state.name} />
-            </>
-        )
-    }
+//     render() {
+//         return (
+//             <>
+//                 <Card characters={this.state.characters} image={this.state.image} name={this.state.name} />
+//             </>
+//         )
+//     }
 
-}
-export default Main;
+// }
+// export default Main;
