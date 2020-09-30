@@ -1,8 +1,21 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import "./index.css";
 
 function Card(props) {
-    const [cards, setCards] = useState(null);
+    return (
+        <div size="fluid">
+            <div className="flip-card">
+                <div className="flip-card-inner">
+                    <div className="flip-card-front">
+                        <img alt="user" className="user-image" src={this.state.image}></img>
+                    </div>
+                    <div className="flip-card-back">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 
 }
